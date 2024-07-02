@@ -10,17 +10,22 @@
         </title>
         <link rel="stylesheet" href="style/style.css">
         <script src="index.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
 
-        <div id="ton-connect"></div>
+        <div class = connectbtn id="ton-connect"></div>
 
         <div class="container" >
             <div class="coin" id="coin">
 
                 <div class="heads">
-                    <img src="assets/coinheadimage.png" alt="" >
+                    <img src="assets/coinheadsimage.png" alt="" >
                 </div>
 
                 <div class="tails">
@@ -29,14 +34,30 @@
 
             </div>
 
-            <div class="buttons">
-                <button id="flipbtn" onclick="flipbtnclick()">FLIP</button>
+            <div class="betoptions">
+                <img src="assets/headsbtn.png" class="headsbtn" id="headsbtn" onclick="headsbtnclick()">
+                <img src="assets/tailsbtn.png" class="tailsbtn" id="tailsbtn" onclick="tailsbtnclick()">
             </div>
+
+            <div class="amountoptions">
+                <button class="amount1" id="amount1" onclick="amount1click()">0.25 TON</button>
+                <button class="amount2" id="amount2" onclick="amount2click()">0.5 TON</button>
+                <button class="amount3" id="amount3" onclick="amount3click()">1 TON</button>
+            </div>
+
+            <div class="amountoptions">
+                <button class="amount4" id="amount4" onclick="amount4click()">2 TON</button>
+                <button class="amount5" id="amount5" onclick="amount5click()">5 TON</button>
+                <button class="amount6" id="amount6" onclick="amount6click()">10 TON</button>
+            </div>
+            
+            <button class="flipbtn" id="flipbtn" onclick="bettransaction()">FLIP</button>
 
         </div>
 
 
         <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+        <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
         <script>
             const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
@@ -56,6 +77,29 @@
     connectToWallet().catch(error => {
         console.error("Error connecting to wallet:", error);
     });
+</script>
+
+<script>
+
+    /*async function bettransaction(){
+        const transaction = {
+      messages: [
+        {
+            address: "UQDx4nLudgg-yWp6tWcG0EGCM-6dA8DBoLDuicnUzNNvhyzp", // destination address
+            amount: "20000000" //Toncoin in nanotons
+        }
+     ]
+    }
+
+      const result = await tonConnectUI.sendTransaction(transaction)
+      alert("Transaction complete");
+      flipbtnclick();
+    }*/
+
+    
+   
+
+
 </script>
 
     </body>
