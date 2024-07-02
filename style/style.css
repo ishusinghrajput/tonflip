@@ -7,23 +7,32 @@
 
 body{
     height: 100%;
-    background: #212020;
+    width: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.17),
+     rgba(0, 0, 0, 0.17) ), url(cover2.gif);
+    background-size: cover;
 }
 
 .container{
     background: #fff;
-    padding: 35px;
+    padding: 20px;
     width: 400px;
     margin: 100px auto;
+    margin-top: 30px;
     box-shadow: 15px 30px 35px rgb(0, 0, 0,0.1);
     border-radius: 10px;
+    align-items: center;
+    align-content: center;
+    display: grid;
 }
 
 .coin{
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     position: relative;
     margin: 32px auto;
+    margin-bottom: 5px;
+    margin-top: 1px;
     transform-style: preserve-3d;
 }
 
@@ -42,11 +51,128 @@ body{
     transform: rotateX(180deg);
 }
 
-.button{
-    width: 150px;
-    font-size: 16px;
+.betoptions{
+    display: inline;
+    padding: 10px;
+    margin: auto;
+}
+
+.headsbtn{
+    width: 130px;
+    text-align: center;
+    background-color: #3b3a3a;
+    margin: 10px;
+    box-shadow: 5px #3b3a3a;
+    border: 3px solid black;
+}
+
+.tailsbtn{
+    width: 130px;
+    text-align: center;
+    background-color: #3b3a3a;
+    margin: 10px;
+    border: none;
+}
+
+.amountoptions{
+    width: fit-content;
+    max-height: fit-content;
+    display: inline;
+    margin: auto;
+}
+
+
+.amount1{
+    width: 90px;
+    text-align: center;
+    background-color: #FEDE56;
+    margin: 5px;
+    padding: 10px;
+    border: 3px solid black;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+}
+
+.amount2{
+    width: 90px;
+    text-align: center;
+    background-color: #FEDE56;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.amount3{
+    width: 90px;
+    text-align: center;
+    background-color: #FEDE56;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.amount4{
+    width: 90px;
+    text-align: center;
+    background-color: #FEDE56;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.amount5{
+    width: 90px;
+    text-align: center;
+    background-color: #FEDE56;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.amount6{
+    width: 90px;
+    text-align: center;
+    background-color: #FEDE56;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.flipbtn{
+    background-color: #FEDE56;
+    height: 55px;
+    width: 320px;
+    margin: auto;
+    margin-top: 20px;
+    border:3px solid #3b3a3a;
+    font-size: 27px;
     cursor: pointer;
     border-radius: 5px;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.connectbtn{
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 @keyframes spin-tails{
