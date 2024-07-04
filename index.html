@@ -15,6 +15,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 
+        <style>
+            body{
+                background-image: url(assets/bganim.gif);
+                background-size: cover;
+                background-repeat: repeat;
+            }
+        </style>
     </head>
 
     <body>
@@ -22,6 +29,9 @@
         <div class = connectbtn id="ton-connect"></div>
 
         <div class="container" >
+
+            <p class="doubletxt">DOUBLE OR BUBBLE</p>
+
             <div class="coin" id="coin">
 
                 <div class="heads">
@@ -39,6 +49,8 @@
                 <img src="assets/tailsbtn.png" class="tailsbtn" id="tailsbtn" onclick="tailsbtnclick()">
             </div>
 
+            <p class="fortxt">FOR</p>
+
             <div class="amountoptions">
                 <button class="amount1" id="amount1" onclick="amount1click()">0.25 TON</button>
                 <button class="amount2" id="amount2" onclick="amount2click()">0.5 TON</button>
@@ -54,6 +66,10 @@
             <button class="flipbtn" id="flipbtn" onclick="bettransaction()">FLIP</button>
 
         </div>
+
+
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
 
 
         <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
@@ -77,29 +93,6 @@
     connectToWallet().catch(error => {
         console.error("Error connecting to wallet:", error);
     });
-</script>
-
-<script>
-
-    /*async function bettransaction(){
-        const transaction = {
-      messages: [
-        {
-            address: "UQDx4nLudgg-yWp6tWcG0EGCM-6dA8DBoLDuicnUzNNvhyzp", // destination address
-            amount: "20000000" //Toncoin in nanotons
-        }
-     ]
-    }
-
-      const result = await tonConnectUI.sendTransaction(transaction)
-      alert("Transaction complete");
-      flipbtnclick();
-    }*/
-
-    
-   
-
-
 </script>
 
     </body>
