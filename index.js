@@ -77,7 +77,7 @@ function headsbtnclick(){
     tailsbtn = document.getElementById("tailsbtn");
     tailsbtn.style.border = "none" ;
     headsbtn = document.getElementById("headsbtn");
-    headsbtn.style.border = "3px solid black" ;
+    headsbtn.style.border = "5px solid #fff" ;
     optionselected = 1;
 }
 
@@ -85,7 +85,7 @@ function tailsbtnclick(){
     headsbtn = document.getElementById("headsbtn");
     headsbtn.style.border = "none" ;
     tailsbtn = document.getElementById("tailsbtn");
-    tailsbtn.style.border = "3px solid black" ;
+    tailsbtn.style.border = "5px solid #fff" ;
     optionselected = 0;
 }
 
@@ -102,7 +102,7 @@ function amount1click(){
     amount4.style.border = "none" ;
     amount5.style.border = "none" ;
     amount6.style.border = "none" ;
-    amount1.style.border = "3px solid black" ;
+    amount1.style.border = "5px solid #fff" ;
     amountselected = 0.25;
 }
 
@@ -119,7 +119,7 @@ function amount2click(){
     amount4.style.border = "none" ;
     amount5.style.border = "none" ;
     amount6.style.border = "none" ;
-    amount2.style.border = "3px solid black" ;
+    amount2.style.border = "5px solid #fff" ;
     amountselected = 0.50;
 }
 
@@ -136,7 +136,7 @@ function amount3click(){
     amount4.style.border = "none" ;
     amount5.style.border = "none" ;
     amount6.style.border = "none" ;
-    amount3.style.border = "3px solid black" ;
+    amount3.style.border = "5px solid #fff" ;
     amountselected = 1;
 }
 
@@ -153,7 +153,7 @@ function amount4click(){
     amount4.style.border = "none" ;
     amount5.style.border = "none" ;
     amount6.style.border = "none" ;
-    amount4.style.border = "3px solid black" ;
+    amount4.style.border = "5px solid #fff" ;
     amountselected = 2;
 }
 
@@ -170,7 +170,7 @@ function amount5click(){
     amount4.style.border = "none" ;
     amount5.style.border = "none" ;
     amount6.style.border = "none" ;
-    amount5.style.border = "3px solid black" ;
+    amount5.style.border = "5px solid #fff" ;
     amountselected = 5;
 }
 
@@ -187,6 +187,6 @@ function amount6click(){
     amount4.style.border = "none" ;
     amount5.style.border = "none" ;
     amount6.style.border = "none" ;
-    amount6.style.border = "3px solid black" ;
+    amount6.style.border = "5px solid #fff" ;
     amountselected = 10;
 }
